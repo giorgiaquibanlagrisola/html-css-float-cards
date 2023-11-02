@@ -25,9 +25,81 @@ html {
 
 header {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 h1 {
     color: rgb(246, 0, 127);
     margin: 20px 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* 
+   MAIN
+*/
+.card-container > .card {
+    float: left;
+    width: calc(100% / 3);
+}
+
+.card-container > .card > * {
+    float: left;
+}
+
+.card-container > .card > .img-card {
+    width: 100px;
+    height: 100px;
+}
+
+.card-container > .card > .img-card >img {
+    width: 100%;
+}
+
+.card-container > .card > .info-card {
+    max-width: calc(100% - 100px);
+    height: 100px;
+    padding: 10px;
+}
+
+.card {
+    background-color: black;
+    color: white;
+}
+
+
+/*
+   DEBUG
+*/
+.debug .container {
+    background-color: beige;
+    border: 1px dashed red;
+    min-height: 200px;
+}
+
+.debug header {
+    background-color: aqua;
+    border: 1px, dashed green;
+}
+
+.debug main {
+    background-color: violet;
+    border: blue;
+}
+
+.debug .card-container {
+    background-color: blue;
+    border: yellow;
+    min-height: 200px;
+
+}
+
+.debug .card {
+    background-color: black;
+    border: 1px dashed red;
+    min-height: 50px;
+
 }
